@@ -24,7 +24,7 @@
 =begin
 #doctest Testing bioruby
 
-= BioRuby Tutorial
+= Bio::PhyloXML Tutorial
 
 * Copyright (C) 2001-2003 KATAYAMA Toshiaki <k .at. bioruby.org>
 * Copyright (C) 2005-2009 Pjotr Prins, Naohisa Goto and others
@@ -36,17 +36,16 @@ annotated phylogenetic trees. PhyloXML parser in BioRuby is implemented in
 Bio::PhyloXML::Parser and writer in Bio::PhyloXML::Writer. 
 More information at www.phyloxml.org
 
-== Requirements
+== Install
 
-In addition to BioRuby library you need a libxml ruby bindings. To install:
+  % gem install bio-phyloxml
 
-  % gem install -r libxml-ruby
-
-For more information see ((<URL:http://libxml.rubyforge.org/install.xml>))
+In addition to bio-phyloxml, dependent gems such as bio and libxml-ruby
+will automatically be installed.
 
 == Parsing a file
 
-    require 'bio'
+    require 'bio-phyloxml'
     
     # Create new phyloxml parser
     phyloxml = Bio::PhyloXML::Parser.new('example.xml')
@@ -90,7 +89,7 @@ PhyloXML files can hold additional information besides phylogenies at the end of
 
 Here is an example of how to retrieve the scientific name of the clades.
 
-    require 'bio'
+    require 'bio-phyloxml'
     
     phyloxml = Bio::PhyloXML::Parser.new('ncbi_taxonomy_mollusca.xml')
     phyloxml.each do |tree|
@@ -101,7 +100,7 @@ Here is an example of how to retrieve the scientific name of the clades.
 
 == Retrieving 'other' data
 
-    require 'bio'
+    require 'bio-phyloxml'
     
     phyloxml = Bio::PhyloXML::Parser.new('phyloxml_examples.xml')
     while tree = phyloxml.next_tree
@@ -135,29 +134,19 @@ Here is an example of how to retrieve the scientific name of the clades.
 
 = APPENDIX
 
-== Installing required external library
+=== Troubleshooting libxml-ruby installation problem
 
-At this point for using BioRuby no additional libraries are needed, except if
-you are using Bio::PhyloXML module. Then you have to install libxml-ruby.
+If you get "Failed to build gem native extension" error, you may need to
+install the GNOME Libxml2 XML toolkit library and development files.
 
-This may change, so keep an eye on the Bioruby website. Also when
-a package is missing BioRuby should show an informative message.
+On Debian or Ubuntu,
 
-At this point installing third party Ruby packages can be a bit
-painful, as the gem standard for packages evolved late and some still
-force you to copy things by hand. Therefore read the README's
-carefully that come with each package.
+  sudo aptitude install libxml2-dev
 
-=== Installing libxml-ruby
+On RedHat or CentOS,
 
-The simplest way is to use gem packaging system.
+  sudo yum install libxml2-devel
 
-  gem install -r libxml-ruby
-
-If you get `require': no such file to load - mkmf (LoadError) error then do
-
-  sudo apt-get install ruby-dev
-
-If you have other problems with installation, then see ((<URL:http://libxml.rubyforge.org/install.xml>))  
+On other platforms, see ((<URL:http://www.xmlsoft.org/>)).
 
 =end
