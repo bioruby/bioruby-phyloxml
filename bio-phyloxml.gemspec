@@ -20,6 +20,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.extra_rdoc_files = [ "README.md",
+                            "COPYING", "COPYING.ja", "BSDL", "LGPL", "GPL",
+                            "doc/Tutorial.rd" ]
+  spec.rdoc_options << '--main' << 'README.md'
+  spec.rdoc_options << '--title' << 'Bio::PhyloXML API documentation'
+  spec.rdoc_options << '--line-numbers'
+
   spec.add_runtime_dependency "bio", ">= 1.5.0"
   spec.add_runtime_dependency "libxml-ruby", "~> 2.8"
 
