@@ -181,7 +181,7 @@ examples see the test files in the source tree.
 Information on the source tree, documentation, examples, issues and
 how to contribute, see
 
-  http://github.com/csw/bioruby-phyloxml
+  http://github.com/bioruby/bioruby-phyloxml
 
 The BioRuby community is on IRC server: irc.freenode.org, channel: #bioruby.
 
@@ -200,4 +200,3 @@ This Biogem is published at [#bio-phyloxml](http://biogems.info/index.html)
 
 Copyright (c) 2009 Diana Jaunzeikare and BioRuby project.
 See COPYING or COPYING.ja for further details.
-
