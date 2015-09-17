@@ -198,5 +198,6 @@ This Biogem is published at [#bio-phyloxml](http://biogems.info/index.html)
 
 ## Copyright
 
-Copyright (c) 2009 Diana Jaunzeikare. See LICENSE.txt for further details.
+Copyright (c) 2009 Diana Jaunzeikare and BioRuby project.
+See COPYING or COPYING.ja for further details.
 
