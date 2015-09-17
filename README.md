@@ -27,10 +27,6 @@ of development, see
 [github.com/latvianlinuxgirl/bioruby](https://github.com/latvianlinuxgirl/bioruby)
 and the BioRuby mailing list archives.
 
-*NOTE:* this is currently in the repackaging process and is not yet
- released! Production users should use the phyloXML support provided
- with BioRuby for the time being.
-
 ## Requirements
 
 bio-phyloxml uses [libxml-ruby](http://xml4r.github.com/libxml-ruby/),
