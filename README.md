@@ -3,7 +3,7 @@
 [![Build Status](https://secure.travis-ci.org/csw/bioruby-phyloxml.png)](http://travis-ci.org/bioruby/bioruby-phyloxml)
 
 bio-phyloxml is a [phyloXML](http://www.phyloxml.org/) plugin for
-[BioRuby](http://bioruby.open-bio.org/), an open source bioinformatics
+[BioRuby](http://bioruby.org/), an open source bioinformatics
 library for Ruby.
 
 phyloXML is an XML language for saving, analyzing and exchanging data
