@@ -1,6 +1,6 @@
 # bio-phyloxml
 
-[![Build Status](https://secure.travis-ci.org/csw/bioruby-phyloxml.png)](http://travis-ci.org/csw/bioruby-phyloxml)
+[![Build Status](https://secure.travis-ci.org/csw/bioruby-phyloxml.png)](http://travis-ci.org/bioruby/bioruby-phyloxml)
 
 bio-phyloxml is a [phyloXML](http://www.phyloxml.org/) plugin for
 [BioRuby](http://bioruby.open-bio.org/), an open source bioinformatics
