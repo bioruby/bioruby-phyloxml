@@ -39,11 +39,18 @@ which requires several C libraries and their headers to be installed:
  * `libiconv`
  * `libxml`
  
-With these installed, the `bio` and `libxml-ruby` gems should be installed
+With these installed, `libxml-ruby` gem should be installed.
 
 ```sh
-gem install -r bio libxml-ruby
+gem install libxml-ruby
 ```
+
+If you see "ERROR: Failed to build gem native extension", the above
+C libraries and their headers may be missing. See doc/Tutorial.rd
+about installation of them in some system.
+
+bio-phyloxml also uses the `bio` gem. It will automatically be installed
+during the installation of `bio-phyloxml` in normal cases.
 
 For more information see the
 [libxml page](https://rubygems.org/gems/libxml-ruby) and
