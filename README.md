@@ -1,8 +1,9 @@
 # bio-phyloxml
 
-[![Build Status](https://secure.travis-ci.org/csw/bioruby-phyloxml.png)](http://travis-ci.org/bioruby/bioruby-phyloxml)
+[![Build Status](https://secure.travis-ci.org/bioruby/bioruby-phyloxml.png)](http://travis-ci.org/bioruby/bioruby-phyloxml)
 
-bio-phyloxml is a [phyloXML](http://www.phyloxml.org/) plugin for
+bio-phyloxml (the package name on RubyGems.org is bioruby-phyloxml)
+is a [phyloXML](http://www.phyloxml.org/) plugin for
 [BioRuby](http://bioruby.org/), an open source bioinformatics
 library for Ruby.
 
@@ -56,7 +57,16 @@ the [BioRuby installation page](http://bioruby.open-bio.org/wiki/Installation).
 ## Installation
 
 ```sh
-gem install bio-phyloxml
+gem install bioruby-phyloxml
+```
+
+Note: Please uninstall old bio-phyloxml gem that have not been maintained
+since 2012. The old bio-phyloxml gem was created in 2012 as a preliminary
+trial of splitting bioruby components to separate gems.
+We tried to contact the author of the old bio-phyloxml gem, but no response.
+
+```sh
+gem uninstall bio-phyloxml
 ```
 
 ## Migration
