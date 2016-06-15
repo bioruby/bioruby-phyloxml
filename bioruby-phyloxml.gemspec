@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = [ "staff@bioruby.org" ]
 
   spec.summary       = %q{PhyloXML plugin for BioRuby}
-  spec.description   = %q{Provides PhyloXML support for BioRuby.}
+  spec.description   = %q{Provides PhyloXML support for BioRuby. This bioruby-phyloxml gem replaces old unmaintained bio-phyloxml gem.}
   spec.homepage      = "http://github.com/bioruby/bioruby-phyloxml"
   spec.license       = "Ruby"
 
