@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bio-phyloxml/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bio-phyloxml"
+  spec.name          = "bioruby-phyloxml"
   spec.version       = Bio::PhyloXML::VERSION
   spec.authors       = [ "Diana Jaunzeikare", "Clayton Wheeler",
                          "BioRuby project" ]
